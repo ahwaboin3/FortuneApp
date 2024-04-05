@@ -11,6 +11,13 @@ public class FortuneRepository implements FortuneService{
 	private List<FortuneDto> fortuneDtos=new ArrayList<>();
 	
 	@Override
+	public void updateFortune(int index, String fortuneStr) {
+		FortuneDto fDto=new FortuneDto();
+		fDto.setFortuneStr(fortuneStr);
+		fortuneDtos.set(index, fDto);
+	}
+	
+	@Override
 	public List<FortuneDto> getFortuneDtos() {
 		return fortuneDtos;
 	}
@@ -24,6 +31,8 @@ public class FortuneRepository implements FortuneService{
 		//배열(ArrayList)에 저장
 		fortuneDtos.add(fDto);
 	}
+
+	
 
 }
 
