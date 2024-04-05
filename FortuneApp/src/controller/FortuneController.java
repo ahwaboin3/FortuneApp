@@ -13,6 +13,14 @@ public class FortuneController {
 		this.fortuneService = fortuneService;
 	}
 	
+	//운세를 삭제(Delete)
+	public void deleteFortune() {
+		//삭제할 인덱스 값 가져 오기
+		int index=fortuneView.getDeleteIndex();
+		//인덱스 값을 주고 운세 하나를 배열에서 삭제
+		fortuneService.deleteFortune();
+	}
+	
 	//운세를 수정
 	public void updateFortune() {
 		//수정하고 싶은 운세의 인덱스 값을 받아 옴

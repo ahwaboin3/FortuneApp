@@ -18,9 +18,17 @@ public class FortuneView {
 		return fortuneStr;
 	}
 	
+	public int getDeleteIndex() {
+		System.out.println("--------운세를 삭제합니다.---------");
+		System.out.println("--------삭제 할 운세 번호를 입력해 주세요.---------");
+		int index=scanner.nextInt();
+		scanner.nextLine();
+		return index;
+	}
+	
 	public int getUpdateIndex() {
 		System.out.println("--------운세를 수정합니다.---------");
-		System.out.println("--------운세 번호를 입력해 주세요.---------");
+		System.out.println("--------수정 할 운세 번호를 입력해 주세요.---------");
 		int index=scanner.nextInt();
 		scanner.nextLine();
 		return index;
@@ -67,6 +75,8 @@ public class FortuneView {
 		//운세을 저장한 포춘 인스턴스 생성 및 배열에 저장 -> 레파지토리 클래스가 담당
 		return fortuneStr;
 	}
+
+	
 
 
 }
