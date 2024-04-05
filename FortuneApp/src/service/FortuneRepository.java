@@ -11,6 +11,12 @@ public class FortuneRepository implements FortuneService{
 	private List<FortuneDto> fortuneDtos=new ArrayList<>();
 	
 	@Override
+	public void deleteFortune(int index) {
+		//인덱스 값으로 삭제 하기
+		fortuneDtos.remove(index);
+	}
+	
+	@Override
 	public void updateFortune(int index, String fortuneStr) {
 		FortuneDto fDto=new FortuneDto();
 		fDto.setFortuneStr(fortuneStr);
@@ -31,8 +37,6 @@ public class FortuneRepository implements FortuneService{
 		//배열(ArrayList)에 저장
 		fortuneDtos.add(fDto);
 	}
-
-	
 
 }
 

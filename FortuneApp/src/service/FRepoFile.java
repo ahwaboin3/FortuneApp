@@ -24,4 +24,10 @@ public class FRepoFile implements FortuneService {
 		
 	}
 
+	@Override
+	public void deleteFortune(int index) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

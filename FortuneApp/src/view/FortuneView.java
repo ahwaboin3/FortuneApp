@@ -41,6 +41,7 @@ public class FortuneView {
 		System.out.println("2.운세 저장");
 		System.out.println("3.운세 전체 출력");
 		System.out.println("4.운세 수정");
+		System.out.println("5.운세 삭제");
 		System.out.print("메뉴 선택:");
 		int choice=-1;
 		choice=scanner.nextInt();

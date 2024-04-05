@@ -18,7 +18,7 @@ public class FortuneController {
 		//삭제할 인덱스 값 가져 오기
 		int index=fortuneView.getDeleteIndex();
 		//인덱스 값을 주고 운세 하나를 배열에서 삭제
-		fortuneService.deleteFortune();
+		fortuneService.deleteFortune(index);
 	}
 	
 	//운세를 수정
@@ -56,6 +56,10 @@ public class FortuneController {
 				case 4:
 					//운세 수정 - 취소 메뉴도 추가하는게 좋다
 					updateFortune();
+					break;
+				case 5:
+					//운세 삭제
+					deleteFortune();
 					break;
 			}
 		}

@@ -7,6 +7,9 @@ import dto.FortuneDto;
 //Model - 프로그램 데이터와 연관 있는 클래스들
 public interface FortuneService {
 	
+	//Delete(삭제)
+	void deleteFortune(int index);
+	
 	//Update(수정)
 	void updateFortune(int index, String fortuneStr);
 	
@@ -15,6 +18,7 @@ public interface FortuneService {
 	
 	//Create(생성) - 운세를 생성하는 메소드
 	void createFortune(String fortuneStr);
+
 	
 
 }
